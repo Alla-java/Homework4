@@ -11,32 +11,32 @@ public class Main {
         }
 
         /* Задание 2. */
-       int degree = 30;
+       int degree = 5;
 
-       if (degree > 5) {
+       if (degree >= 5) {
             System.out.println("На улице" + " " + degree + " " + "градусов, можно идти без шапки");
         }
-       if (degree < 5) {
+       else {
             System.out.println("На улице" + " " + degree + " " + "градусов, нужно надеть шапку");
         }
 
         /* Задание 3. */
        int speed = 45;
 
-       if (speed > 60) {
+       if (speed >= 60) {
             System.out.println("Если скорость" + " " + speed + ", то придется заплатить штраф");
         }
-       if (speed < 60) {
+       else {
             System.out.println("Если скорость" + " " + speed + ", то можно ездить спокойно");
         }
 
         /* Задание 4. */
-        int agePerson = 25;
+        int agePerson = 17;
 
-        if (agePerson > 2 && agePerson < 6) {
+        if (agePerson >= 2 && agePerson <= 6) {
             System.out.println("Если возраст человека равен" + " " + agePerson + ", то ему нужно ходить в детский сад" );
         }
-        if (agePerson > 7 && agePerson < 17) {
+        if (agePerson >= 7 && agePerson <= 17) {
             System.out.println("Если возраст человека равен" + " " + agePerson + ", то ему нужно ходить в школу" );
         }
         if (agePerson >= 18 && agePerson <= 24) {
@@ -52,20 +52,20 @@ public class Main {
        if (ageChild < 5) {
             System.out.println("Если возраст ребенка равен" + " " + ageChild + ", то ему нельзя кататься на аттракционе" );
         }
-       if (ageChild > 5 && ageChild < 14) {
+       if (ageChild >= 5 && ageChild < 14) {
             System.out.println("Если возраст ребенка равен" + " " + ageChild + ", то ему можно кататься на аттракционе в сопровождении" );
         }
-       if (ageChild > 14) {
+       if (ageChild >= 14) {
             System.out.println("Если возраст ребенка равен" + " " + ageChild + ", то ему можно кататься на аттракционе без сопровождения взрослого" );
         }
 
         /* Задание 6. */
-       int carCapacity = 110;
+       int carCapacity = 101;
 
        if (carCapacity < 60) {
             System.out.println("В вагоне есть сидячие места");
         }
-       else if (carCapacity > 60 && carCapacity < 102) {
+       else if (carCapacity >= 60 && carCapacity <= 102) {
             System.out.println("В вагоне есть только стоячие места");
         }
        else {System.out.println("Вагон уже полностью забит");
